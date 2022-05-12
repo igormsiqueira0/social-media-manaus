@@ -51,6 +51,19 @@
 		text-align: right;
 		margin-block: 60px;
 		position: relative;
+		animation: showLR 0.4s forwards;
+
+		@keyframes showLR {
+			from {
+				opacity: 0;
+				transform: translateY(-30px);
+			}
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+
 		@include device(lg) {
 			display: flex;
 			justify-content: start;
