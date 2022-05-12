@@ -59,9 +59,7 @@ nav.forEach((item) => {
 const initialNavState = setInterval(() => {
 	nav[0].click();
 
-	if (data) {
-		clearInterval(initialNavState);
-	}
+	if (data) clearInterval(initialNavState);
 }, 100);
 
 // labels inscrição ------------------------------------
@@ -107,10 +105,11 @@ aListProgramacao.forEach((item) => {
 function createSlideItem() {
 	const slide = document.querySelector('.slide');
 
-	data.forEach((palestranteInfo) => {
-		const newSlideItem = document.createElement('li');
+	if (data)
+		data.forEach((palestranteInfo) => {
+			const newSlideItem = document.createElement('li');
 
-		newSlideItem.innerHTML = `
+			newSlideItem.innerHTML = `
 			<div class="palestrante">
 				<img src=${palestranteInfo.foto} alt="Foto do palestrante ${palestranteInfo.nome}" />
 				<h2>${palestranteInfo.nome}</h2>
@@ -118,11 +117,15 @@ function createSlideItem() {
 			</div>
 		`;
 
-		slide.appendChild(newSlideItem);
-	});
+			slide.appendChild(newSlideItem);
+		});
 }
 
-setTimeout(createSlideItem, 300);
+const slideStateUntilFetch = setInterval(() => {
+	createSlideItem();
+
+	if (data) clearInterval(slideStateUntilFetch);
+}, 100);
 
 // funcionamento slide ------------------------------------
 
@@ -354,8 +357,10 @@ class SlideNav extends Slide {
 	}
 }
 
-setTimeout(() => {
+const createSlideUntilFetch = setInterval(() => {
 	const slide = new SlideNav('.slide', '.slide-wrapper');
 	slide.init();
 	slide.addArrow('.prev', '.next');
+
+	if (data) clearInterval(createSlideUntilFetch);
 }, 400);
