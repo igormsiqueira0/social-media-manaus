@@ -1,0 +1,15 @@
+.sobre {
+	margin-top: 100px;
+	margin-bottom: 70px;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	gap: 10px;
+	p {
+		font-size: rem(40);
+		color: $cinza;
+		@include device(sm) {
+			font-size: rem(30);
+		}
+	}
+}

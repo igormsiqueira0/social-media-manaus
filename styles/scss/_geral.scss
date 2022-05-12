@@ -1,0 +1,112 @@
+$laranja: #ff6759;
+$preto: #4a4a4a;
+$cinza: #676767;
+$cinza-claro: #a9a9a9;
+$cinza-azul: #9aa3b0;
+$main: #364861;
+
+.container {
+	max-width: min(1300px, 90%);
+	margin-inline: auto;
+}
+
+.container-inner-grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+*,
+*::after,
+*::before {
+	font-family: 'Work Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	&:hover,
+	&:focus {
+		color: white;
+	}
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+h1,
+h2 {
+	font-weight: bold;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+@mixin device($device, $size: 0) {
+	@if $device == sm {
+		@media (max-width: 400px) {
+			@content;
+		}
+	} @else if $device == md {
+		@media (max-width: 700px) {
+			@content;
+		}
+	} @else if $device == lg {
+		@media (max-width: 900px) {
+			@content;
+		}
+	} @else if $device == xl {
+		@media (max-width: 1070px) {
+			@content;
+		}
+	} @else if $device == xxl {
+		@media (max-width: 1270px) {
+			@content;
+		}
+	} @else if $device == custom {
+		@media (max-width: $size) {
+			@content;
+		}
+	}
+}
+
+@function rem($px) {
+	@return math.div($px, 16) + rem;
+}
+
+.section-title {
+	font-size: rem(60);
+	color: $cinza-claro;
+	margin-bottom: 40px;
+	span {
+		color: $main;
+	}
+	@include device(sm) {
+		font-size: rem(50);
+	}
+}
+
+.navbar-dark .navbar-toggler {
+	border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-ring {
+	transition: 0.2s;
+	&:focus,
+	&:active {
+		box-shadow: 0 0 0 3px white, 0 0 0 5px $laranja;
+	}
+}

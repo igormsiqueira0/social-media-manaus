@@ -1,0 +1,32 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: rem(40);
+	padding-block: 70px;
+	background-color: transparent;
+	max-width: 1300px;
+	margin-inline: auto;
+	padding-inline: 0;
+	@include device(xxl) {
+		max-width: 100%;
+		padding-inline: 20px;
+	}
+	@include device(custom, 1200px) {
+		background-color: #23425e;
+	}
+	@include device(custom, 1599px) {
+		font-size: rem(30);
+	}
+	ul {
+		display: flex;
+		gap: 30px;
+		@include device(custom, 1200px) {
+			margin-top: 50px;
+		}
+	}
+	.logo {
+		display: contents;
+		text-transform: uppercase;
+	}
+}

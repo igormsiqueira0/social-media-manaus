@@ -1,0 +1,93 @@
+.programacao {
+	margin-bottom: 400px;
+	@include device(lg) {
+		margin-bottom: 200px;
+	}
+	h1 {
+		text-align: center;
+		margin-bottom: 70px;
+	}
+	nav {
+		grid-column: 3 / 11;
+		@include device(xl) {
+			grid-column: 1 / -1;
+		}
+		ul {
+			display: flex;
+			justify-content: space-between;
+			padding: 0;
+			li {
+				color: $cinza-azul;
+				font-size: rem(40);
+				font-weight: bold;
+				cursor: pointer;
+				padding: 10px;
+				@include device(sm) {
+					font-size: rem(30);
+				}
+				&.active {
+					color: $main;
+					text-decoration: underline;
+					text-underline-offset: 5px;
+				}
+				a {
+					color: inherit;
+				}
+			}
+		}
+	}
+	&--list {
+		grid-row: 2;
+		grid-column: 3 / 11;
+		padding: 0;
+		@include device(xl) {
+			grid-column: 1 / -1;
+		}
+	}
+	&--item {
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		justify-content: end;
+		text-align: right;
+		margin-block: 60px;
+		position: relative;
+		@include device(lg) {
+			display: flex;
+			justify-content: start;
+			text-align: start;
+			padding-top: 90px;
+			border-bottom: 1px solid $cinza;
+			padding-bottom: 60px;
+		}
+		&--content {
+			grid-column: 4 / -1;
+		}
+		h2 {
+			color: $preto;
+			font-size: rem(40);
+			margin-bottom: 10px;
+		}
+		p {
+			color: $cinza;
+			font-size: rem(40);
+			font-weight: regular;
+		}
+		span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: $laranja;
+			font-size: rem(40);
+			font-weight: bold;
+			display: flex;
+			align-items: center;
+			gap: 50px;
+			&::before {
+				content: '';
+				height: 60px;
+				width: 60px;
+				background: url('../../assets/horario.png') no-repeat center center;
+			}
+		}
+	}
+}

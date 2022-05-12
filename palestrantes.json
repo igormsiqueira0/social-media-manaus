@@ -1,0 +1,38 @@
+[
+	{
+		"dia": "18",
+		"horario": "12h",
+		"nome": "João Ribeiro",
+		"descricao": "Você irá aprender a medir e avaliar o desempenho das ações de marketing."
+	},
+	{
+		"dia": "18",
+		"horario": "17h",
+		"nome": "Mateus Barros",
+		"descricao": "Você irá aprender as melhores técnicas de design gráfico para artes de social media."
+	},
+	{
+		"dia": "19",
+		"horario": "13h",
+		"nome": "André Delchiaro",
+		"descricao": "Você irá aprender a manter uma comunicação aberta com seus seguidores."
+	},
+	{
+		"dia": "19",
+		"horario": "16h",
+		"nome": "Giovana Pereira",
+		"descricao": "Você irá aprender a gamificar seu conteúdo."
+	},
+	{
+		"dia": "20",
+		"horario": "11:30h",
+		"nome": "Laís Fraga",
+		"descricao": "Você irá aprender a se colocar no lugar do seu público."
+	},
+	{
+		"dia": "20",
+		"horario": "16h",
+		"nome": "Gilberto Meireles",
+		"descricao": "Você irá aprender a ter sua própria identidade e mantenha esse padrão"
+	}
+]

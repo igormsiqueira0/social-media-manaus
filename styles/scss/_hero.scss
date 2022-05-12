@@ -1,0 +1,57 @@
+.hero {
+	width: 100%;
+	background: url('../../assets/img.png') no-repeat;
+	background-size: cover;
+	margin-top: -200px;
+	padding-top: calc(187px + 195px - 60px);
+	color: white;
+	@include device(custom, 1200px) {
+		padding-top: 250px;
+	}
+	&--inner {
+		text-align: center;
+		row-gap: 50px;
+		h1 {
+			grid-column: 2 / 12;
+			font-size: rem(60);
+			@include device(md) {
+				grid-column: 1 / -1;
+			}
+		}
+		p {
+			grid-column: 2 / 12;
+			grid-row: 2;
+			font-size: rem(40);
+			@include device(md) {
+				grid-column: 1 / -1;
+			}
+		}
+	}
+	&--btn {
+		padding-block: 32px;
+		display: inline-block;
+		background-color: $laranja;
+		grid-row: 3;
+		grid-column: 5 / 9;
+		font-size: rem(40);
+		text-transform: uppercase;
+		@include device(xl) {
+			grid-column: 3 / 11;
+		}
+		@include device(md) {
+			grid-column: 1 / -1;
+		}
+	}
+	iframe {
+		grid-row: 4;
+		grid-column: 3 / 11;
+		height: 400px;
+		width: 100%;
+		@include device(xl) {
+			grid-column: 1 / -1;
+		}
+		@include device(sm) {
+			height: 300px;
+		}
+	}
+}

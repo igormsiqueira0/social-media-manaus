@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SMM - Confira informações sobre o Evento Social Media Manaus</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles/css/style.css" />
+	</head>
+	<body>
+		<header>
+			<nav
+				class="container-md navbar navbar-expand-xl navbar-dark"
+				aria-label="Primária"
+			>
+				<a class="navbar-brand logo" href="#"
+					><img src="./assets/logo-vermelha.png" alt="Logo do evento"
+				/></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a href="#home">Home</a></li>
+						<li class="nav-item"><a href="#sobre">Sobre</a></li>
+						<li class="nav-item"><a href="#palestrantes">Palestrantes</a></li>
+						<li class="nav-item"><a href="#programacao">Programação</a></li>
+						<li class="nav-item"><a href="#inscricao">Inscrição</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main class="hero" id="home">
+			<div class="hero--inner container container-inner-grid">
+				<h1>O maior workshop de mídia sociais está de volta!</h1>
+				<p>
+					Sendo um dos maiores eventos do Brasil, o Social Media Manaus vem com
+					tudo para mais uma edição.
+				</p>
+				<a href="#inscricao" class="hero--btn btn-ring">Garantir vaga</a>
+				<iframe
+					src="https://www.youtube.com/embed/ttTF8lLm1FY"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
+			</div>
+		</main>
+
+		<section class="sobre container" id="sobre" aria-labelledby="titulo-sobre">
+			<div class="sobre--text">
+				<h1 class="section-title" id="titulo-sobre">
+					<span>Sobre</span> o evento
+				</h1>
+				<p>
+					Desde 2015, o Social Media Manaus traz especialistas na área de mídias
+					sociais para não apenas compartilhar conhecimento, mas também
+					propiciar uma experiência incrível.
+				</p>
+			</div>
+			<div class="sobre--pic d-none d-lg-block">
+				<img
+					src="./assets/ilustracao-6.png"
+					alt="Ilustração redes sociais SMM"
+				/>
+			</div>
+		</section>
+
+		<section
+			role="contentinfo"
+			class="informacoes"
+			id="informacoes"
+			aria-label="Informações do evento"
+		>
+			<div class="informacoes--inner container container-inner-grid">
+				<ul>
+					<li class="informacoes--item">
+						<img src="./assets/online.png" alt="Ícone de pesquisa online" />
+						<p>100% online</p>
+					</li>
+					<li class="informacoes--item">
+						<img src="./assets/data.png" alt="Ícone de calendário" />
+						<p>18 a 20 de Dezembro</p>
+					</li>
+					<li class="informacoes--item">
+						<img src="./assets/gratuito.png" alt="Item de gratuito" />
+						<p>Gratuito</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section
+			class="palestrantes"
+			aria-labelledby="titulo-palestrantes"
+			id="palestrantes"
+		>
+			<h1 class="section-title" id="titulo-palestrantes">
+				Conheça os <span>palestrantes</span>
+			</h1>
+		</section>
+
+		<section
+			class="programacao"
+			id="programacao"
+			aria-labelledby="titulo-programacao"
+		>
+			<h1 class="section-title" id="titulo-programacao">
+				Confira a <span>programação</span>
+			</h1>
+
+			<div class="programacao--content container container-inner-grid">
+				<nav role="navigation" aria-label="Dias de apresentações">
+					<ul>
+						<li data-dia="18"><a href="">18/12</a></li>
+						<li data-dia="19"><a href="">19/12</a></li>
+						<li data-dia="20"><a href="">20/12</a></li>
+					</ul>
+				</nav>
+
+				<ul class="programacao--list"></ul>
+			</div>
+		</section>
+
+		<footer class="inscricao" id="inscricao">
+			<div class="container container-inner-grid inscricao--inner">
+				<form action="">
+					<h2>Garanta já sua vaga!</h2>
+					<div class="field-wrapper">
+						<label for="nome">Seu nome completo</label>
+						<input type="text" name="nome" id="nome" required />
+					</div>
+					<div class="field-wrapper">
+						<label for="nome">Seu melhor e-mail</label>
+						<input type="email" name="email" id="email" required />
+					</div>
+
+					<button class="btn-ring">Inscrever-se</button>
+				</form>
+
+				<div class="contato">
+					<p class="email">Dúvidas? smm@gmail.com</p>
+					<p class="anuncio">
+						Obs.: Haverá possibilidade de anúncios entre as aulas
+					</p>
+					<div class="sociais">
+						<p>Siga o <strong>SMM</strong>:</p>
+						<ul>
+							<li><a href="https://instagram.com">Instagram</a></li>
+							<li><a href="https://facebook.com">Facebook</a></li>
+							<li><a href="https://twitter.com">Twitter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<script src="./scripts/script.js"></script>
+	</body>
+</html>
