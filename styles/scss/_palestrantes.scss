@@ -2,5 +2,86 @@
 	margin-block: 100px;
 	h1 {
 		text-align: center;
+		margin-bottom: 70px;
 	}
+}
+
+.palestrante {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 30px;
+	img {
+		margin-bottom: 20px;
+		border-radius: 50%;
+	}
+	h2 {
+		font-size: rem(40);
+		font-weight: bold;
+		margin: 0;
+	}
+	p {
+		font-size: rem(40);
+		color: $cinza;
+	}
+}
+
+// slide basic configs -----------------------
+
+.slide-wrapper {
+	overflow: hidden;
+}
+
+.slide {
+	display: flex;
+}
+
+.slide:hover {
+	will-change: transform;
+}
+
+.slide li {
+	flex-shrink: 0;
+	width: 80vw;
+	max-width: 800px;
+	margin: 0 20px;
+
+	border-radius: 4px;
+	overflow: hidden;
+	opacity: 0.6;
+	transform: scale(0.8);
+	transition: 0.4s;
+}
+
+.slide li.active {
+	opacity: 1;
+	transform: scale(1);
+}
+
+// slide nav --------------------
+
+.arrow-nav {
+	display: flex;
+	margin-inline: auto;
+	gap: 5px;
+	background-color: rgba($laranja, 0.5);
+	width: fit-content;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.prev,
+.next {
+	border: none;
+	height: 55px;
+	width: 100px;
+}
+
+.prev {
+	background: $laranja url('../../assets/esquerda.png') no-repeat center center;
+}
+
+.next {
+	background: $laranja url('../../assets/direita.png') no-repeat center center;
 }

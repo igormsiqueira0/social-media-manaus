@@ -3,36 +3,48 @@
 		"dia": "18",
 		"horario": "12h",
 		"nome": "João Ribeiro",
-		"descricao": "Você irá aprender a medir e avaliar o desempenho das ações de marketing."
+		"descricao": "Você irá aprender a medir e avaliar o desempenho das ações de marketing.",
+		"cargo": "Especialista em métricas",
+		"foto": "assets/palestrantes/cropped/Joao_Ribeiro.png"
 	},
 	{
 		"dia": "18",
 		"horario": "17h",
 		"nome": "Mateus Barros",
-		"descricao": "Você irá aprender as melhores técnicas de design gráfico para artes de social media."
+		"descricao": "Você irá aprender as melhores técnicas de design gráfico para artes de social media.",
+		"cargo": "Especialista em design",
+		"foto": "assets/palestrantes/cropped/Mateus_Barros.jpg"
 	},
 	{
 		"dia": "19",
 		"horario": "13h",
 		"nome": "André Delchiaro",
-		"descricao": "Você irá aprender a manter uma comunicação aberta com seus seguidores."
+		"descricao": "Você irá aprender a manter uma comunicação aberta com seus seguidores.",
+		"cargo": "Especialista em comunicação",
+		"foto": "assets/palestrantes/cropped/Andre_Delchiaro.jpg"
 	},
 	{
 		"dia": "19",
 		"horario": "16h",
-		"nome": "Giovana Pereira",
-		"descricao": "Você irá aprender a gamificar seu conteúdo."
+		"nome": "Julia Pereira",
+		"descricao": "Você irá aprender a gamificar seu conteúdo.",
+		"cargo": "Especialista em SEO",
+		"foto": "assets/palestrantes/cropped/Julia_Pereira.jpg"
 	},
 	{
 		"dia": "20",
 		"horario": "11:30h",
 		"nome": "Laís Fraga",
-		"descricao": "Você irá aprender a se colocar no lugar do seu público."
+		"descricao": "Você irá aprender a se colocar no lugar do seu público.",
+		"cargo": "Especialista em linguagens corporais",
+		"foto": "assets/palestrantes/cropped/Lais_Fraga.jpg"
 	},
 	{
 		"dia": "20",
 		"horario": "16h",
 		"nome": "Gilberto Meireles",
-		"descricao": "Você irá aprender a ter sua própria identidade e mantenha esse padrão"
+		"descricao": "Você irá aprender a ter sua própria identidade e manter esse padrão",
+		"cargo": "Especialista em desenvolvilmento pessoal",
+		"foto": "assets/palestrantes/cropped/Gilberto_Meireles.jpg"
 	}
 ]
