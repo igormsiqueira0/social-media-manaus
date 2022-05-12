@@ -5,7 +5,7 @@ let data,
 	cronograma = [];
 
 async function fetchData() {
-	const json = await (await fetch('/palestrantes.json')).json();
+	const json = await (await fetch('./palestrantes.json')).json();
 
 	data = json;
 	arrangeData();
