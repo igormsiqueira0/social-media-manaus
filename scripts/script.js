@@ -56,9 +56,13 @@ nav.forEach((item) => {
 	item.addEventListener('click', updateVisualContent);
 });
 
-setTimeout(() => {
+const initialNavState = setInterval(() => {
 	nav[0].click();
-}, 500);
+
+	if (data) {
+		clearInterval(initialNavState);
+	}
+}, 100);
 
 // labels inscrição ------------------------------------
 
