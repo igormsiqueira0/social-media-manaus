@@ -24,6 +24,7 @@
 				padding: 10px;
 				@include device(sm) {
 					font-size: rem(30);
+					padding: 0px;
 				}
 				&.active {
 					color: $main;
@@ -82,7 +83,6 @@
 		}
 		p {
 			color: $cinza;
-			font-size: rem(40);
 			font-weight: regular;
 		}
 		span {

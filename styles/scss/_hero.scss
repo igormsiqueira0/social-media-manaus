@@ -21,7 +21,6 @@
 		p {
 			grid-column: 2 / 12;
 			grid-row: 2;
-			font-size: rem(40);
 			@include device(md) {
 				grid-column: 1 / -1;
 			}
@@ -52,6 +51,9 @@
 		}
 		@include device(sm) {
 			height: 300px;
+		}
+		@include device(custom, 350px) {
+			height: 250px;
 		}
 	}
 }

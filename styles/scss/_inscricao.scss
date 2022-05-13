@@ -81,17 +81,25 @@
 		gap: 100px;
 		p {
 			color: white;
-			font-size: rem(40);
 			@include device(md) {
 				font-size: rem(30);
 			}
 		}
 	}
-	.email {
+	.email,
+	.anuncio {
 		display: grid;
 		grid-template-columns: auto 1fr;
 		align-items: center;
 		gap: 20px;
+
+		@include device(custom, 430px) {
+			grid-template-columns: 1fr;
+			justify-items: center;
+			text-align: center;
+		}
+	}
+	.email {
 		&::before {
 			content: '';
 			background: url('../../assets/email.png') no-repeat center center;
@@ -100,10 +108,6 @@
 		}
 	}
 	.anuncio {
-		display: grid;
-		grid-template-columns: auto 1fr;
-		align-items: center;
-		gap: 20px;
 		&::before {
 			content: '';
 			background: url('../../assets/anuncio.png') no-repeat center center;

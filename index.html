@@ -4,6 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Consulte aqui informações sobre o evento mais esperado de Manaus, o Social Media Manaus. Aqui, além de receber informações sobre o evento, você também pode garantir sua vaga."
+		/>
+		<meta name="theme-color" content="#364861" />
 		<title>SMM - Confira informações sobre o Evento Social Media Manaus</title>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -35,7 +40,7 @@
 					data-bs-target="#navbarSupportedContent"
 					aria-controls="navbarSupportedContent"
 					aria-expanded="false"
-					aria-label="Toggle navigation"
+					aria-label="Alternar navegação"
 				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -126,8 +131,8 @@
 			</div>
 
 			<div class="arrow-nav">
-				<button class="prev btn-ring"></button>
-				<button class="next btn-ring"></button>
+				<button class="prev btn-ring" aria-label="Slide anterior"></button>
+				<button class="next btn-ring" aria-label="Próximo slide"></button>
 			</div>
 		</section>
 
@@ -143,9 +148,15 @@
 			<div class="programacao--content container container-inner-grid">
 				<nav role="navigation" aria-label="Dias de apresentações">
 					<ul>
-						<li data-dia="18"><a href="">18/12</a></li>
-						<li data-dia="19"><a href="">19/12</a></li>
-						<li data-dia="20"><a href="">20/12</a></li>
+						<li data-dia="18" aria-label="18 de dezembro" tabindex="0">
+							18/12
+						</li>
+						<li data-dia="19" aria-label="19 de dezembro" tabindex="0">
+							19/12
+						</li>
+						<li data-dia="20" aria-label="20 de dezembro" tabindex="0">
+							20/12
+						</li>
 					</ul>
 				</nav>
 
@@ -162,7 +173,7 @@
 						<input type="text" name="nome" id="nome" required />
 					</div>
 					<div class="field-wrapper">
-						<label for="nome">Seu melhor e-mail</label>
+						<label for="email">Seu melhor e-mail</label>
 						<input type="email" name="email" id="email" required />
 					</div>
 
@@ -177,9 +188,13 @@
 					<div class="sociais">
 						<p>Siga o <strong>SMM</strong>:</p>
 						<ul>
-							<li><a href="https://instagram.com">Instagram</a></li>
-							<li><a href="https://facebook.com">Facebook</a></li>
-							<li><a href="https://twitter.com">Twitter</a></li>
+							<li>
+								<a href="https://instagram.com" target="_blank">Instagram</a>
+							</li>
+							<li>
+								<a href="https://facebook.com" target="_blank">Facebook</a>
+							</li>
+							<li><a href="https://twitter.com" target="_blank">Twitter</a></li>
 						</ul>
 					</div>
 				</div>

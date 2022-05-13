@@ -39,6 +39,7 @@ const updateVisualContent = ({ currentTarget }) => {
 			const newLi = document.createElement('li');
 
 			newLi.classList.add('programacao--item');
+			newLi.setAttribute('aria-live', 'polite');
 
 			newLi.innerHTML = `
 			<span>${info.horario}</span>
@@ -90,16 +91,6 @@ const contatoLabel = () => {
 
 contatoLabel();
 
-// prevent programação link to go up
-
-const aListProgramacao = document.querySelectorAll('.programacao li a');
-
-aListProgramacao.forEach((item) => {
-	item.addEventListener('click', (e) => {
-		e.preventDefault();
-	});
-});
-
 // create slide items from fetch -----------
 
 function createSlideItem() {
@@ -111,7 +102,7 @@ function createSlideItem() {
 
 			newSlideItem.innerHTML = `
 			<div class="palestrante">
-				<img src=${palestranteInfo.foto} alt="Foto do palestrante ${palestranteInfo.nome}" />
+				<img src=${palestranteInfo.foto} alt="Foto do palestrante ${palestranteInfo.nome}" height="280" width="280" />
 				<h2>${palestranteInfo.nome}</h2>
 				<p>${palestranteInfo.cargo}</p>
 			</div>
@@ -216,9 +207,14 @@ class Slide {
 	changeActiveClass() {
 		this.slideArray.forEach((item) => {
 			item.element.classList.remove(this.activeClass);
+			item.element.removeAttribute('aria-live');
 		});
 
 		this.slideArray[this.index.active].element.classList.add(this.activeClass);
+		this.slideArray[this.index.active].element.setAttribute(
+			'aria-live',
+			'polite'
+		);
 	}
 
 	slidePosition(slide) {
